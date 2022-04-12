@@ -11,8 +11,9 @@ local test_step() = {
       "echo hello-world",
       "mkdir temp_stg ; cd temp_stg",
       "code1=`echo file#1 > file1.txt`",
-      "code2=`echo file#2 > ./temp_stg/file2.txt`",
-      "echo $code1 ; echo $code2"
+      // "code2=`echo file#2 > ./temp_stg/file2.txt`",
+      "echo $code1"
+      // "echo $code1 ; echo $code2"
     ]
 };
 
