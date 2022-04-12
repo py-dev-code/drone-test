@@ -11,7 +11,7 @@ local test_step() = {
       "echo hello-world",
       "mkdir temp_stg ; cd temp_stg",
       "echo hello > test1.txt",
-      " [ -s test1.txt ] && echo file is not empty && cat test1.txt"
+      " [ -s test1.txt ] && echo file is not empty && cat test1.txt && EXIT 1"
       // "echo $code1 ; echo $code2"
     ]
 };
