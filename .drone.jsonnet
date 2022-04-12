@@ -10,8 +10,8 @@ local test_step() = {
     "commands": [
       "echo hello-world",
       "mkdir temp_stg ; cd temp_stg",
-      "echo file#1 > file1.txt ; code1=$?",
-      "echo file#2 > file2.txt ; code2=$?",
+      "code1=`echo file#1 > file1.txt`",
+      "code2=`echo file#2 > ./temp_stg/file2.txt`",
       "echo $code1 ; echo $code2"
     ]
 };
