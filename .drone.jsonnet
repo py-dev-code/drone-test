@@ -10,8 +10,8 @@ local test_step() = {
     "commands": [
       "echo hello-world",
       "mkdir temp_stg ; cd temp_stg",
-      "touch test1.txt",
-      " [ -s test1.txt ] || echo file is empty"
+      "echo hello > test1.txt",
+      " [ -s test1.txt ] && echo file is not empty && cat test1.txt"
       // "echo $code1 ; echo $code2"
     ]
 };
