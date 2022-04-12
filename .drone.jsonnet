@@ -9,9 +9,7 @@ local test_step() = {
     ],
     "commands": [
       "echo hello-world",
-      "apt-get update",
-      "apt-get -y install jq curl"
-      // "echo hello-world123 > temp.txt ; curl -u username:password --upload-file temp.txt http://drone-test.glid.to:8081/repository/glide-artifacts/test-results-101/temp3.txt"
+      "cd temp_stg"
     ]
 };
 
@@ -20,6 +18,9 @@ local test_step() = {
   "kind": "pipeline",
   "type": "docker",
   "name": "test_pipeline",
+  "clone": {
+    "disable": true
+  },
   "trigger": {
     "event": [
       "push"
