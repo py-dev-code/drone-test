@@ -11,7 +11,7 @@ local test_step() = {
       "echo hello-world",
       "mkdir temp_stg ; cd temp_stg",
       "touch test1.txt",
-      "[ -s test1.txt ] || echo "file is empty""
+      " [ -s test1.txt ] || echo file is empty"
       // "echo $code1 ; echo $code2"
     ]
 };
